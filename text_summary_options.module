@@ -54,6 +54,7 @@ function text_summary_options_field_widget_form_alter(&$element, &$form_state, $
       // Process required.
       if (isset($context['instance']['settings']['required_summary']) && $context['instance']['settings']['required_summary'][0]) {
         $element['summary']['#required'] = TRUE;
+        $element['summary']['#description'] = "Summary for the " . $element['#title'] . " field is required.";
       }
     }
   }
