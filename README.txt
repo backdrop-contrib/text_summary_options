@@ -45,8 +45,8 @@ CONFIGURATION
     1. Navigate to Administration > Extend and enable the module.
     2. Navigate to Administration > Structure > Content types > [Content type to
        edit] > [Field to edit].
-    3. There are now two new options: "Show summary" and "Mark Summary as
-       required". Save settings.
+    3. There are now three new options: "Show summary", "Mark Summary as
+       required" and "Summary help text". Save settings.
 
 
 MAINTAINERS
