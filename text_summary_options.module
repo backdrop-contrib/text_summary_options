@@ -36,6 +36,12 @@ function text_summary_options_form_alter(&$form, &$form_state, $form_id) {
           '#description' => t('Should the Summary field be required.'),
           '#default_value' => !empty($settings['required_summary'][0]) ? TRUE : FALSE,
         );
+        $form['instance']['settings']['summary_help'][] = array(
+          '#type' => 'textarea',
+          '#title' => t('Summary help text'),
+          '#description' => t('Help text to display for the summary.'),
+          '#default_value' => isset($settings['summary_help'][0]) ? $settings['summary_help'][0] : '',
+        );
       }
       break;
   }
@@ -55,6 +61,10 @@ function text_summary_options_field_widget_form_alter(&$element, &$form_state, $
       if (isset($context['instance']['settings']['required_summary']) && $context['instance']['settings']['required_summary'][0]) {
         $element['summary']['#required'] = TRUE;
         $element['summary']['#description'] = "Summary for the " . $element['#title'] . " field is required.";
+      }
+      // Process summary help.
+      if (isset($context['instance']['settings']['summary_help']) && $context['instance']['settings']['summary_help'][0]) {
+        $element['summary']['#description'] = $context['instance']['settings']['summary_help'][0];
       }
     }
   }
