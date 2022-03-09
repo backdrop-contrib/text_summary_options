@@ -1,5 +1,7 @@
-name = Text Summary Options
-description = Provide additional options for "Long text with summary" widget.
-backdrop = 1.x
 type = module
+name = Text Summary Options
+description = Provide additional options for "Long text with summary" widgets.
 package = Fields
+backdrop = 1.x
+tags[] = Fields
+tags[] = User Interface
