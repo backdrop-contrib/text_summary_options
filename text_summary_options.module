@@ -28,13 +28,13 @@ function text_summary_options_form_alter(&$form, &$form_state, $form_id) {
           '#type' => 'checkbox',
           '#title' => t('Show summary'),
           '#description' => t('Display the summary field by default.'),
-          '#default_value' => !empty($settings['show_summary'][0]) ? TRUE : FALSE,
+          '#default_value' => !empty($settings['show_summary'][0])?TRUE : FALSE,
         );
         $form['instance']['settings']['required_summary'][] = array(
           '#type' => 'checkbox',
           '#title' => t('Mark Summary as required'),
           '#description' => t('Should the Summary field be required.'),
-          '#default_value' => !empty($settings['required_summary'][0]) ? TRUE : FALSE,
+          '#default_value' => !empty($settings['required_summary'][0])?TRUE : FALSE,
         );
         $form['instance']['settings']['summary_help'][] = array(
           '#type' => 'textarea',

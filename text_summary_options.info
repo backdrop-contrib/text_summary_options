@@ -1,4 +1,5 @@
 name = Text Summary Options
 description = Provide additional options for "Long text with summary" widget.
-core = 7.x
+backdrop = 1.x
+type = module
 package = Fields
