@@ -9,10 +9,7 @@ Drupal already has built-in support for a summary field, however there is not
 much control of whether or not it is displayed, or required.
 
  * For a full description of the module, visit the project page:
-   https://www.drupal.org/project/text_summary_options
-
- * To submit bug reports and feature suggestions, or to track changes:
-   https://www.drupal.org/project/issues/text_summary_options
+   https://github.com/backdrop-contrib/text_summary_options
 
 Installation 
 ------------
