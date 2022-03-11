@@ -5,7 +5,7 @@ This module provides site builders with additional options for the 'summary'
 field when using "Text Area with a Summary" widget.
 
 Often, a summary or teaser field is used when displaying content in views.
-Drupal already has built-in support for a summary field, however there is not
+Backdrop already has built-in support for a summary field, however there is not
 much control of whether or not it is displayed, or required.
 
  * For a full description of the module, visit the project page:
